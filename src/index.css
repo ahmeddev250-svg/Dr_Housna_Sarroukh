@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: 'Plus Jakarta Sans', Inter, system-ui, sans-serif;
+    color: #2D2A2E;
+    background-color: #FFF9FB;
+  }
+
+  html[dir='rtl'] {
+    font-family: 'Cairo', 'Tajawal', sans-serif;
+  }
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.76);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  box-shadow: 0 8px 32px rgba(225, 38, 123, 0.08);
+  border-radius: 20px;
+}
+
+.glass-card-hover {
+  transition: transform 0.28s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.28s cubic-bezier(0.22, 1, 0.36, 1), border-color 0.28s ease;
+}
+
+.glass-card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 16px 40px rgba(225, 38, 123, 0.14);
+  border-color: rgba(225, 38, 123, 0.28);
+}
+
+.glass-navigation {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(225, 38, 123, 0.12);
+  box-shadow: 0 4px 24px rgba(225, 38, 123, 0.06);
+}
+
+.glass-pill {
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(225, 38, 123, 0.16);
+}
+
+.hero-mesh {
+  background-color: #FFF9FB;
+  background-image:
+    radial-gradient(at 12% 18%, rgba(225, 38, 123, 0.11) 0px, transparent 52%),
+    radial-gradient(at 88% 14%, rgba(248, 211, 228, 0.55) 0px, transparent 48%),
+    radial-gradient(at 75% 85%, rgba(225, 38, 123, 0.07) 0px, transparent 50%);
+}
